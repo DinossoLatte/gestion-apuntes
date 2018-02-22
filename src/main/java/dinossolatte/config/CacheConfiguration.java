@@ -44,6 +44,11 @@ public class CacheConfiguration {
             cm.createCache(dinossolatte.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(dinossolatte.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(dinossolatte.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(dinossolatte.domain.Subject.class.getName(), jcacheConfiguration);
+            cm.createCache(dinossolatte.domain.Subject.class.getName() + ".folders", jcacheConfiguration);
+            cm.createCache(dinossolatte.domain.Folder.class.getName(), jcacheConfiguration);
+            cm.createCache(dinossolatte.domain.Folder.class.getName() + ".datas", jcacheConfiguration);
+            cm.createCache(dinossolatte.domain.Data.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
